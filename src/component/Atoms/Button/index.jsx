@@ -1,7 +1,6 @@
 import React from "react";
 import COLOR from "../../../variables/color";
 import FONTFAMILY from "../../../variables/font_family";
-import BREAKPOINT from "@/variables/breakpoint";
 
 export const Button = (props) => {
   return (
@@ -31,10 +30,6 @@ const Button = styled.button`
   .button-text {
     font-family: ${FONTFAMILY.NOTO_SERIF};
     text: 24px;
-    color: ${COLOR.GREEN};
-  }
-
-  @media (max-width: ${BREAKPOINT.MEDIUM}) {
-    padding: 32px 16px;
+    color: ${COLOR.Night_Rider};
   }
 `;

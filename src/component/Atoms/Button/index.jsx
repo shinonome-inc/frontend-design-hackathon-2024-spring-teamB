@@ -25,7 +25,7 @@ Button.defaultProps = {
 };
 
 const StyledButton = styled.button`
-  font-size: 24px;
+  font-size: ${(props) => (props.language === "english" ? "30px" : "24px")};
   padding: ${(props) =>
     props.variant === "yellow" ? "20px 36px" : "16px 32px"};
   background-color: ${(props) =>

@@ -1,35 +1,44 @@
 import React from "react";
-import COLOR from "../../../variables/color";
-import FONTFAMILY from "../../../variables/font_family";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import FONTFAMILY from "../../../variables/fontfamily";
 
-export const Button = (props) => {
+const Button = ({ children, onClick, variant, language }) => {
   return (
-    <Button onClick={props.onClick}>
-      <img src={plus} className="button" />
-      <div className="button-text">テキスト</div>
-    </Button>
+    <StyledButton onClick={onClick} variant={variant} language={language}>
+      {children}
+    </StyledButton>
   );
 };
-export default Button;
 
-const Button = styled.button`
-  display: flex;
-  padding: 36px 20px;
-  gap: 10px;
-  background: ${COLOR.YELLOW};
+Button.propTypes = {
+  children: PropTypes.node.isRequired,
+  onClick: PropTypes.func,
+  variant: PropTypes.oneOf(["white", "yellow"]),
+  language: PropTypes.oneOf(["english", "japanese"]),
+};
+
+Button.defaultProps = {
+  onClick: () => {},
+  variant: "white",
+  language: "english",
+};
+
+const StyledButton = styled.button`
+  font-size: 24px;
+  padding: ${(props) =>
+    props.variant === "yellow" ? "20px 36px" : "16px 32px"};
+  background-color: ${(props) =>
+    props.variant === "yellow" ? "#F2D600" : "transparent"};
   border: none;
   border-radius: 44px;
-  transition: 0.2s;
-  aline-items: center;
-
-  .button {
-    width: 168px;
-    height: 78px;
-  }
-
-  .button-text {
-    font-family: ${FONTFAMILY.NOTO_SERIF};
-    text: 24px;
-    color: ${COLOR.Night_Rider};
-  }
+  cursor: pointer;
+  box-shadow: ${(props) =>
+    props.variant === "yellow"
+      ? "0px 6px 10px rgba(0, 0, 0, 0.3)"
+      : "0px 2px 6px rgba(0, 0, 0, 0.3)"};
+  font-family: ${(props) =>
+    props.language === "japanese" ? FONTFAMILY.NOTO_SERIF : FONTFAMILY.TIMES};
 `;
+
+export default Button;

@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import FONTFAMILY from "../../variables/fontfamily";
 
-const Templates = ({ children, isMedium }) => {
+const Templates = ({ children }) => {
+  const [isMedium, setIsMedium] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMedium(window.innerWidth <= 1064);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const logoImagePath = isMedium ? "/assets/logomd.png" : "/assets/logolg.png";
+  const borderImagePath = isMedium
+    ? "/assets/bordermd.png"
+    : "/assets/borderlg.png";
 
   return (
     <Wrapper>
@@ -12,15 +30,15 @@ const Templates = ({ children, isMedium }) => {
           <Logo src={logoImagePath} alt="Logo" />
         </div>
         <div>
-          <BorderLogo src="/assets/borderlg.png" alt="Border Logo" />
+          <Border src={borderImagePath} alt="Border" />
         </div>
       </Header>
       <Content>{children}</Content>
       <Footer>
         <div>
-          <BorderLogo src="/assets/borderlg.png" alt="Border Logo" />
-          <Copyright>©PlayGround FE_DE joint hackathon teamB</Copyright>
+          <Border src={borderImagePath} alt="Border" />
         </div>
+        <Copyright>©PlayGround FE_DE joint hackathon teamB</Copyright>
       </Footer>
     </Wrapper>
   );
@@ -49,7 +67,7 @@ const Logo = styled.img`
   }
 `;
 
-const BorderLogo = styled.img`
+const Border = styled.img`
   height: 66px;
   width: auto;
 
@@ -73,12 +91,13 @@ const Content = styled.div`
 
 const Footer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 `;
 
 const Copyright = styled.div`
   text-align: center;
-  font-family: ${FONTFAMILY.NOTO_SERIF};
+  font-family: ${FONTFAMILY.TIMES};
   font-size: 24px;
 
   @media (max-width: 1064px) {

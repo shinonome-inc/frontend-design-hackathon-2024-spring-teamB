@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import React, { useState, useEffect } from "react";
+import FONTFAMILY from "../../../variables/fontfamily";
 
 export const Analyzingview = () => {
   const [isMd, setIsMd] = useState(false);
@@ -39,7 +40,7 @@ const TextWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Noto Serif JP";
+  font-family: ${FONTFAMILY.NOTO_SERIF};
   font-size: 96px;
   font-weight: 700;
   padding: 0 24px 0 24px;

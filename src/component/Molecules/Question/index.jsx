@@ -17,12 +17,12 @@ const StyledQuestion = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: -2px;
   align-self: stretch;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
   background-color: black; //見やすいように仮設定
 
   @media (max-width: ${BREAKPOINT.MEDIUM}) {
-    width: 366px;
+    max-width: 366px;
   }
 `;
 
@@ -30,22 +30,17 @@ const StyledPolygon = styled.div`
   width: 16px;
   height: 24px;
   clip-path: polygon(0 50%, 100% 0, 100% 100%);
-  //transform: rotate(90deg);
-  //box-sizing: border-box;
   background-color: ${COLOR.WHITE};
 `;
 
 const StyledText = styled.div`
-  //display: flex;
-  //flex-direction: column;
-  //align-items: flex-start;
-  padding: 40px 24px;
   font-size: 36px;
   line-height: normal;
+  padding: 40px 24px;
+  margin-left: -2px;
   gap: 8px;
   flex: 100;
   border-radius: 60px;
-  //box-sizing: border-box;
   font-color: ${COLOR.BLACK};
   font-family: ${FONTFAMILY.NOTO_SANS};
   background-color: ${COLOR.WHITE};
@@ -53,6 +48,5 @@ const StyledText = styled.div`
   @media (max-width: ${BREAKPOINT.MEDIUM}) {
     padding: 24px;
     font-size: 24px;
-    gap: 8px;
   }
 `;

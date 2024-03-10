@@ -4,10 +4,6 @@ import styled from "styled-components";
 import COLORS from "../../../variables/colors";
 import FONTFAMILY from "../../../variables/fontfamily";
 
-//画像が表示されない、pngでもダメだった
-import grayarrow from "../../../../public/assets/Chevron-d.svg";
-import globe from "../../../../public/assets/ei-language1.svg";
-
 export const Languages = () => {
   const [isSelecting, setIsSelecting] = useState(false);
 
@@ -30,10 +26,10 @@ export const Languages = () => {
   return (
     <StyledView>
       <StyledBox>
-        <img src={globe} alt="globe image" />
+        <img src="/assets/ei-language1.svg" alt="globe image" />
         <StyledSelectingButton onClick={onClick}>
           <StyledText>言語を選択</StyledText>
-          <img src={grayarrow} alt="gray arrow image" />
+          <img src="/assets/Chevron-d.svg" alt="gray arrow image" />
         </StyledSelectingButton>
       </StyledBox>
       {isSelecting && (
@@ -60,6 +56,7 @@ const StyledBox = styled.div`
 
 const StyledSelectingButton = styled.button`
   display: flex;
+  flex-grow: 1;
   margin-left: 12px;
   border: none;
   cursor: pointer;
@@ -67,12 +64,14 @@ const StyledSelectingButton = styled.button`
 `;
 
 const StyledText = styled.div`
+  flex-grow: 1;
   margin-right: 12px;
   font-family: ${FONTFAMILY.NOTO_SANS};
   font-size: 12px;
+  text-align: left;
 `;
 
-//色々試したのですがscrollbarが反映されない、おそらく要素が少なすぎるから？→今回はなくてもいいかも
+//色々試したのですがscrollbarの矢印が反映されない、おそらく要素が少なすぎるから？→今回はなくてもいいかも
 const StyledScrollBox = styled.div`
   display: flex;
   flex-direction: column;

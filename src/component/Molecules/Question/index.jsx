@@ -19,10 +19,9 @@ const StyledQuestion = styled.div`
   align-items: center;
   align-self: stretch;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
-  background-color: black; //見やすいように仮設定
 
   @media (max-width: ${BREAKPOINT.MEDIUM}) {
-    max-width: 366px;
+    width: 100%;
   }
 `;
 

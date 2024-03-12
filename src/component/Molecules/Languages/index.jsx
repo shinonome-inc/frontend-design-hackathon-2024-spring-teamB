@@ -36,6 +36,9 @@ export const Languages = () => {
         <StyledScrollBox>
           <StyledButtonEn onClick={isEnglish}>English</StyledButtonEn>
           <StyledButtonJa onClick={isJapanese}>日本語</StyledButtonJa>
+          <StyledButtonExample>Text</StyledButtonExample>
+          <StyledButtonExample>Text</StyledButtonExample>
+          <StyledButtonExample>Text</StyledButtonExample>
         </StyledScrollBox>
       )}
     </StyledView>
@@ -46,6 +49,8 @@ export default Languages;
 
 const StyledView = styled.div`
   width: 200px;
+  gap: 2px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 `;
 
 const StyledBox = styled.div`
@@ -71,32 +76,24 @@ const StyledText = styled.div`
   text-align: left;
 `;
 
-//色々試したのですがscrollbarの矢印が反映されない、おそらく要素が少なすぎるから？→今回はなくてもいいかも
 const StyledScrollBox = styled.div`
   display: flex;
   flex-direction: column;
   padding: 4px 8px;
   border-radius: 2px;
   margin-top: 2px;
+  max-height: 120px;
   overflow-y: scroll;
-  :-webkit-scrollbar {
+
+  &::-webkit-scrollbar {
     width: 5px;
     border-radius: 4px;
   }
-  ::-webkit-scrollbar-track {
+  &::-webkit-scrollbar-track {
     background-color: ${COLORS.Light_Gray};
   }
-  ::-webkit-scrollbar-button {
-    display: none;
-  }
-  ::-webkit-scrollbar-button-start {
-    display: none;
-  }
-  ::-webkit-scrollbar-button-end {
-    display: none;
-  }
-  ::-webkit-scrollbar-thumb {
-    height: 36.61px;
+  &::-webkit-scrollbar-thumb {
+    height: 20px;
     border-radius: 4px;
     background-color: ${COLORS.Dark_Gray};
   }
@@ -115,6 +112,18 @@ const StyledButtonEn = styled.button`
 `;
 
 const StyledButtonJa = styled.button`
+  width: 100%;
+  padding: 6px 4px;
+  font-family: ${FONTFAMILY.NOTO_SANS};
+  color: ${COLORS.Dark_Gray};
+  cursor: pointer;
+  font-size: 12px;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+`;
+
+const StyledButtonExample = styled.button`
   width: 100%;
   padding: 6px 4px;
   font-family: ${FONTFAMILY.NOTO_SANS};

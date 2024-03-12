@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Button from "../../Atoms/Button";
+import Languages from "../../Molecules/Languages";
 import Templates from "../../Templates";
 
 import FONTFAMILY from "../../../variables/fontfamily";
@@ -10,6 +11,9 @@ import BREAKPOINT from "../../../variables/breakpoint";
 export const TopPage = () => {
   const Children = (
     <StyledTopContainer>
+      <StyledLanguageContainer>
+        <Languages />
+      </StyledLanguageContainer>
       <StyledTitleContainer>
         <StyledTitleLogo>
           <img src="/assets/lgleft.png" />
@@ -40,8 +44,13 @@ export default TopPage;
 
 const StyledTopContainer = styled.div`
   display: flex;
+  flex-direction: column;
   margin-top: 24px;
   justify-content: center;
+`;
+
+const StyledLanguageContainer = styled.div`
+  margin: 0 0 0 auto;
 `;
 
 const StyledTitleContainer = styled.div`

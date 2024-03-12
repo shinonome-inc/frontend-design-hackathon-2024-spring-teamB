@@ -5,6 +5,7 @@ import Button from "../../Atoms/Button";
 import Templates from "../../Templates";
 
 import FONTFAMILY from "../../../variables/fontfamily";
+import BREAKPOINT from "../../../variables/breakpoint";
 
 export const TopPage = () => {
   const Children = (
@@ -15,9 +16,7 @@ export const TopPage = () => {
           <StyledTitleLogoText>ラーメン診断</StyledTitleLogoText>
           <img src="/assets/rightlg.png" />
         </StyledTitleLogo>
-        <StyledTitleCopy>
-          <StyledMainCopy>好みのラーメンをお選びします</StyledMainCopy>
-        </StyledTitleCopy>
+        <StyledMainCopy>好みのラーメンをお選びします</StyledMainCopy>
         <StyledButtonContainer>
           <Button variant="yellow" language="ja">
             診断スタート
@@ -55,19 +54,25 @@ const StyledTitleLogo = styled.div`
   display: flex;
   flex-direction: row;
   max-height: 196px;
+  align-items: center;
 `;
 
 const StyledTitleLogoText = styled.div`
   font-family: ${FONTFAMILY.NOTO_SANS};
   font-size: 96px;
   font-weight: 700;
+  @media (max-width: ${BREAKPOINT.MEDIUM}) {
+    font-size: 32px;
+  }
 `;
-
-const StyledTitleCopy = styled.div``;
 
 const StyledMainCopy = styled.div`
   font-family: ${FONTFAMILY.NOTO_SANS};
   font-size: 48px;
+  margin: 24px 0px;
+  @media (max-width: ${BREAKPOINT.MEDIUM}) {
+    font-size: 16px;
+  }
 `;
 
 const StyledButtonContainer = styled.div`

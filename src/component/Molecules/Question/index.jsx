@@ -18,8 +18,6 @@ const StyledQuestion = styled.div`
   justify-content: center;
   align-items: center;
   align-self: stretch;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
-  background-color: black; //見やすいように仮設定
 
   @media (max-width: ${BREAKPOINT.MEDIUM}) {
     max-width: 366px;
@@ -30,6 +28,7 @@ const StyledPolygon = styled.div`
   width: 16px;
   height: 24px;
   clip-path: polygon(0 50%, 100% 0, 100% 100%);
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
   background-color: ${COLOR.WHITE};
 `;
 
@@ -41,6 +40,7 @@ const StyledText = styled.div`
   gap: 8px;
   flex: 100;
   border-radius: 60px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
   font-color: ${COLOR.BLACK};
   font-family: ${FONTFAMILY.NOTO_SANS};
   background-color: ${COLOR.WHITE};

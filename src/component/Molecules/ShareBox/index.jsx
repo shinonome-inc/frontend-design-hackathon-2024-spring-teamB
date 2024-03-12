@@ -2,20 +2,20 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Templates from "../../Templates";
 import FONTFAMILY from "../../../variables/fontfamily";
-import { JapaneseResult, EnglishResult } from "../../pages/Results/index";
-import contentCopyIcon from "../../../../public/assets/content_copy.svg";
 
 const ShareBox = ({ language }) => {
-  const [recommendedRamen, setRecommendedRamen] = useState("");
+  const [copied, setCopied] = useState(false);
 
-  useEffect(() => {
-    // 言語に応じて、結果コンポーネントからおすすめのラーメンを取得
-    const result = language === "japanese" ? JapaneseResult() : EnglishResult();
-    setRecommendedRamen(result.props.result);
-  }, [language]);
+  const handleCopyClick = () => {
+    const textToCopy = `ラーメン診断で「ラーメン」をおすすめしてもらいました！あなたも診断してみよう！　#ラーメン診断　#おすすめラーメン\nhttp://~~~`;
+
+    navigator.clipboard
+      .writeText(textToCopy)
+      .then(() => setCopied(true))
+      .catch((error) => console.error("Error copying text: ", error));
+  };
 
   return (
-    <Templates>
       <Wrapper>
         <ShareText>
           {language === "english"
@@ -23,14 +23,17 @@ const ShareBox = ({ language }) => {
             : "シェア用SNSテキスト"}
         </ShareText>
         <InputBox
-          value={`ラーメン診断で「${recommendedRamen}ラーメン」をおすすめしてもらいました！あなたも診断してみよう！　#ラーメン診断　#おすすめラーメン\nhttp://~~~`}
+          value={`ラーメン診断で「ラーメン」をおすすめしてもらいました！あなたも診断してみよう！　#ラーメン診断　#おすすめラーメン\nhttp://~~~`}
           readOnly
         />
         <CopyButton onClick={handleCopyClick}>
-          <CopyIcon src={contentCopyIcon} alt="Copy Icon" />{" "}
+          {copied ? (
+            "Copied!"
+          ) : (
+            <CopyIcon src="/assets/content_copy.svg" alt="Copy Icon" />
+          )}
         </CopyButton>
       </Wrapper>
-    </Templates>
   );
 };
 

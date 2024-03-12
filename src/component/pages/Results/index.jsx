@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Templates from "../../Templates";
 import FONTFAMILY from "../../../variables/fontfamily";
+import ShareBox from "../../Molecules/ShareBox";
 
 const DiagnosisResultPage = ({ result, language }) => {
   const titleText = language === "japanese" ? "診断結果" : "Result";
@@ -74,6 +75,7 @@ const DiagnosisResultPage = ({ result, language }) => {
           {shopLinkText}
         </ShopLink>
       </ShopInfo>
+      <ShareBox/>
     </Templates>
   );
 };

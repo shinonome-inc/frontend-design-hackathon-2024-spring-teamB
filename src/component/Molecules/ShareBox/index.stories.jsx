@@ -1,22 +1,11 @@
 import React from "react";
 import ShareBox from "./index";
-import { JapaneseResult, EnglishResult } from "../../pages/Results/index";
 
 export default {
-  title: "Components/ShareBox",
-  component: ShareBox,
+  title: "Molecules/ShareBox",
+  component: ShareBox, // ShareBox コンポーネントを指定する
 };
 
-export const JapaneseShareBox = () => (
-  <ShareBox
-    language="japanese"
-    recommendedRamen={JapaneseResult().props.result} // JapaneseResultコンポーネントからrecommendedRamenを取得
-  />
-);
+const Template = (args) => <ShareBox {...args} />; // Template 内でも ShareBox を使用する
 
-export const EnglishShareBox = () => (
-  <ShareBox
-    language="english"
-    recommendedRamen={EnglishResult().props.result} // EnglishResultコンポーネントからrecommendedRamenを取得
-  />
-);
+export const Default = Template.bind({});

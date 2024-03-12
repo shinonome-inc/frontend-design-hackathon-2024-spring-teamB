@@ -20,7 +20,7 @@ const StyledQuestion = styled.div`
   align-self: stretch;
 
   @media (max-width: ${BREAKPOINT.MEDIUM}) {
-    max-width: 366px;
+    width: 100%;
   }
 `;
 

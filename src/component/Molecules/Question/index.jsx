@@ -1,16 +1,22 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 import FONTFAMILY from "../../../variables/fontfamily";
 import BREAKPOINT from "../../../variables/breakpoint";
 import COLOR from "../../../variables/colors";
 
-export const Question = ({ onClick }) => {
+export const Question = ({ onClick, language }) => {
   return (
     <StyledQuestion onClick={onClick}>
       <StyledPolygon></StyledPolygon>
-      <StyledText>ここに質問が入ります</StyledText>
+      <StyledText language={language}>ここに質問が入ります</StyledText>
     </StyledQuestion>
   );
+};
+
+Question.propTypes = {
+  onClick: PropTypes.func,
+  language: PropTypes.oneOf(["english", "japanese"]),
 };
 
 const StyledQuestion = styled.div`
@@ -42,7 +48,8 @@ const StyledText = styled.div`
   border-radius: 60px;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
   font-color: ${COLOR.BLACK};
-  font-family: ${FONTFAMILY.NOTO_SANS};
+  font-family: ${(props) =>
+    props.language === "japanese" ? FONTFAMILY.NOTO_SANS : FONTFAMILY.TIMES};
   background-color: ${COLOR.WHITE};
 
   @media (max-width: ${BREAKPOINT.MEDIUM}) {

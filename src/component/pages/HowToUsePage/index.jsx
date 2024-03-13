@@ -53,7 +53,6 @@ HowToUse.PropTypes = {
 const StyledHowToUseContainer = styled.div`
   display: flex;
   flex-direction: column;
-
   align-items: center;
   gap: 100px;
 `;
@@ -62,7 +61,8 @@ const StyledUseContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  //align-items: flex-start;
+  align-items: center;
   gap: 20px;
   align-self: stretch;
 `;
@@ -90,7 +90,6 @@ const StyledTextContainer = styled.div`
 const StyledLogContainer = styled.div`
   width: 228px;
   height: 203px;
-  //background-color:          //見つけられなかった
 `;
 
 const StyledManual = styled.div`

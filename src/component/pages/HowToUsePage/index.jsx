@@ -51,26 +51,24 @@ HowToUse.PropTypes = {
 };
 
 const StyledHowToUseContainer = styled.div`
- display: flex;
- flex:direction: column;
- align-items: center;
- gap: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
 `;
 
 const StyledUseContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 100px;
+  gap: 20px;
   align-self: stretch;
 `;
 
 const StyledTitle = styled.div`
-  font-family: ${FONTFAMILY.NOTO_SANS};
-  font-size: 96px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-family: ${(props) =>
+    props.language === "japanese" ? FONTFAMILY.NOTO_SERIF : FONTFAMILY.TIMES};
+  font-size: 64px;
   font-color: ${COLOR.BLACK};
 
   @media (max-width: ${BREAKPOINT.MEDIUM}) {
@@ -93,8 +91,9 @@ const StyledLogContainer = styled.div`
 `;
 
 const StyledManual = styled.div`
-  font-family: ${FONTFAMILY.NOTO_SANS}
-  font-size: 36px;
+  font-family: ${(props) =>
+    props.language === "japanese" ? FONTFAMILY.NOTO_SANS : FONTFAMILY.TIMES};
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

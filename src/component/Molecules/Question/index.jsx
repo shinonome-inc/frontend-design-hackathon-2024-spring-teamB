@@ -5,14 +5,6 @@ import FONTFAMILY from "../../../variables/fontfamily";
 import COLOR from "../../../variables/colors";
 import BREAKPOINT from "../../../variables/breakpoint";
 
-export const Question = ({ onClick, language }) => {
-  return (
-    <StyledQuestion onClick={onClick}>
-      <StyledPolygon></StyledPolygon>
-      <StyledText language={language}>ここに質問が入ります</StyledText>
-import FONTFAMILY from "../../../variables/fontfamily";
-import BREAKPOINT from "../../../variables/breakpoint";
-import COLOR from "../../../variables/colors";
 
 export const Question = ({ onClick, questionText }) => {
   return (

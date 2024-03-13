@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import Templates from "../../Templates";
+import Templates from "../component/Templates";
 import React, { useEffect, useState } from "react";
-import FONTFAMILY from "../../../variables/fontfamily";
-import { Question } from "../../Molecules/Question";
-import Button from "../../Atoms/Button";
+import FONTFAMILY from "../../variables/fontfamily";
+import { Question } from "../component/Molecules/Question";
+import Button from "../component/Atoms/Button";
 import { paths } from '../../paths';
 import { useRouter } from "next/router";
 

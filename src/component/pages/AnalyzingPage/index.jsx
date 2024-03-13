@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import Templates from "../../Templates";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import { paths } from "../paths";
 
 const AnalyzingPage = () => {
   const router = useRouter();
@@ -18,7 +19,7 @@ const AnalyzingPage = () => {
 
   useEffect(() => {
     if (redirect) {
-      router.push();
+      router.push(results);
     }
   }, [redirect, router]);
 
@@ -86,6 +87,6 @@ const ImgLoop = styled.img`
   animation: ${loop} 50s linear infinite;
 
   ${ImageWrapper} & {
-    animation: ${loopReversed}  50s linear infinite;
+    animation: ${loopReversed} 50s linear infinite;
   }
 `;

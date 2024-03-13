@@ -104,9 +104,10 @@ const StyledManual = styled.div`
   font-color: ${COLOR.BLACK};
 `;
 
-const StyledButtonContainer = styled.button`
+const StyledButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  padding: 0 0 40px 0;
 `;

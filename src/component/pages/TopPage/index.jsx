@@ -65,6 +65,15 @@ const StyledTitleLogo = styled.div`
   flex-direction: row;
   max-height: 196px;
   align-items: center;
+
+  @media (max-width: 1064px) {
+    img:first-child {
+      content: url("/assets/leftmd.png");
+    }
+    img:last-child {
+      content: url("/assets/rightmd.png");
+    }
+  }
 `;
 
 const StyledTitleLogoText = styled.div`

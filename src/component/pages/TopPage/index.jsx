@@ -57,6 +57,7 @@ const StyledTitleContainer = styled.div`
   margin: 6px 0px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 const StyledTitleLogo = styled.div`
@@ -67,7 +68,7 @@ const StyledTitleLogo = styled.div`
 `;
 
 const StyledTitleLogoText = styled.div`
-  font-family: ${FONTFAMILY.NOTO_SANS};
+  font-family: ${FONTFAMILY.NOTO_SERIF};
   font-size: 96px;
   font-weight: 700;
   @media (max-width: ${BREAKPOINT.MEDIUM}) {
@@ -76,7 +77,7 @@ const StyledTitleLogoText = styled.div`
 `;
 
 const StyledMainCopy = styled.div`
-  font-family: ${FONTFAMILY.NOTO_SANS};
+  font-family: ${FONTFAMILY.NOTO_SERIF};
   font-size: 48px;
   margin: 24px 0px;
   @media (max-width: ${BREAKPOINT.MEDIUM}) {
@@ -91,4 +92,5 @@ const StyledButtonContainer = styled.div`
   justify-content: center; /* ボタンを中央に配置 */
   max-width: 216px;
   margin: 0 auto;
+  padding: 0 0 40px 0;
 `;

@@ -61,12 +61,13 @@ const StyledUseContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 100px;
+  gap: 20px;
   align-self: stretch;
 `;
 
 const StyledTitle = styled.div`
-  font-family: ${FONTFAMILY.NOTO_SERIF};
+  font-family: ${(props) =>
+    props.language === "japanese" ? FONTFAMILY.NOTO_SERIF : FONTFAMILY.TIMES};
   font-size: 64px;
   font-color: ${COLOR.BLACK};
 

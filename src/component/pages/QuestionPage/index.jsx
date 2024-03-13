@@ -82,6 +82,7 @@ const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  padding: 0 0 40px 0;
 `;
 const YellowButtonWrapper = styled.div`
   display: flex;

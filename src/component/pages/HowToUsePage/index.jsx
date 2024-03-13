@@ -118,7 +118,7 @@ const StyledManual = styled.div`
   font-color: ${COLOR.BLACK};
 
   @media (max-width: ${BREAKPOINT.MEDIUM}) {
-    font-size: 24px;
+    font-size: 14px;
   }
 `;
 

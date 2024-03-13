@@ -5,14 +5,14 @@
       "english": "Toyama Black Ramen"
     },
     "description": {
-      "japanese": "富山ブラックラーメンの説明文",
-      "english": "Description of Toyama Black Ramen"
+      "japanese": "富山ブラックラーメンは、富山県のご当地ラーメンで、特徴的な黒いスープが特徴です。このラーメンは、戦後の復興期に肉体労働者の塩分補給として、またランチとして提供されるようになりました。そのため、スープは醤油を濃くしたもので、見た目のインパクトが強いです。しかし、その味は見た目ほど濃くなく、意外とさっぱりとしています。具材としては、チャーシューやメンマ、ネギなどが一般的です。",
+      "english": "Toyama Black Ramen is a local specialty of Toyama Prefecture, characterized by its distinctive black soup. This ramen was originally served as a lunch and salt supplement for physical laborers during the post-war reconstruction period. Therefore, the soup is made with a strong soy sauce, giving it a strong visual impact. However, the taste is not as strong as it looks, and it is surprisingly light. Common toppings include Chashu (roast pork), Menma (bamboo shoots), and green onions."
     },
     "shopName": {
-      "japanese": "お店の名前1",
-      "english": "Shop Name 1"
+      "japanese": "新福菜館 秋葉原店",
+      "english": "Shimpukusaikan akihabaraten "
     },
-    "shopLink": "https://shop1.example.com"
+    "shopLink": "https://retty.me/area/PRE13/ARE11/SUB1102/100001228596/"
   },
   {
     "type": {
@@ -20,61 +20,238 @@
       "english": "Sapporo Ramen"
     },
     "description": {
-      "japanese": "札幌ラーメンの説明文",
-      "english": "Description of Sapporo Ramen"
+      "japanese": "札幌ラーメンは、北海道札幌市が発祥の地とされ、特に味噌ラーメンが有名です。スープは鶏ガラや豚骨、野菜などから取った出汁に味噌を加え、具材としてはチャーシュー、もやし、コーン、バターなどが一般的です。また、札幌ラーメンには、麺が太くて縮れているのが特徴的です。",
+      "english": "Sapporo Ramen, originating from Sapporo city in Hokkaido, is particularly famous for its Miso Ramen. The soup is made from a broth of chicken, pork bones, vegetables, etc., with miso added, and common toppings include Chashu (roast pork), bean sprouts, corn, and butter. Also, a distinctive feature of Sapporo Ramen is its thick, curly noodles."
     },
     "shopName": {
-      "japanese": "お店の名前2",
-      "english": "Shop Name 2"
+      "japanese": "札幌味噌らーめん ひつじの木 大森本店",
+      "english": "Sapporo miso ramen Hitsuji no ki Omorihonten"
     },
-    "shopLink": "https://shop2.example.com"
+    "shopLink": "https://tabelog.com/tokyo/A1315/A131502/13254596/"
   },
   {
-    "type": "横浜家系ラーメン",
+    "type": {
+      "japanese": "横浜家系ラーメン",
+      "english": "Yokohama-style Ramen"
+    },
     "description": {
-      "japanese": "横浜家系ラーメンの説明文",
-      "english": "Description of Yokohama Ramen"
+      "japanese": "横浜家系ラーメンは、横浜市周辺で誕生したラーメンの一種で、豚骨ベースの濃厚スープに中太のストレート麺、チャーシュー、刻みネギ、もやし、海苔、酢漬けなどがトッピングされることが特徴的です。特に1960年代後半から1970年代前半にかけて、横浜市周辺のラーメン屋で流行しました。",
+      "english": "Yokohama-style Ramen is a type of ramen that originated in the Yokohama area. It is characterized by a rich soup based on pork bones, straight medium-thick noodles, and toppings such as Chashu (roast pork), chopped green onions, bean sprouts, Nori (seaweed), and pickles. It became popular in ramen shops around Yokohama, especially from the late 1960s to the early 1970s."
     },
     "shopName": {
-      "japanese": "お店の名前3",
-      "english": "Shop Name 3"
+      "japanese": "横濱ラーメン あさが家",
+      "english": "YoKohama Ramen Asagaya"
     },
-    "shopLink": "https://shop3.example.com"
+    "shopLink": "https://tabelog.com/tokyo/A1319/A131905/13248941/"
   },
   {
-    "type": "徳島ラーメン",
+    "type": {
+      "japanese": "徳島ラーメン",
+      "english": "Tokushima Ramen"
+    },
     "description": {
-      "japanese": "徳島ラーメンの説明文",
-      "english": "Description of Tokushima Ramen"
+      "japanese": "徳島ラーメンは、戦後に屋台で出された白濁系スープのラーメンがルーツとされています。今では、昭和40年（1965）前後に登場した甘辛い豚骨醤油の「茶系」スープ、豚骨と鶏ガラ、野菜などを使った「黄系」スープ、あっさりした「白系」スープの3種に分けられ、徳島市内には「茶系」スープのお店が多いそうです。麺は、スープに絡みやすい20cm前後の短いストレート麺が主流です1。具は甘辛く味付けされた豚バラ肉が定番ですが、チャーシューをのせるお店もあります。煮卵ではなく、生卵が多いのも徳島ラーメンの特徴のひとつで、濃厚なスープとも相性抜群です。",
+      "english": "Tokushima Ramen, which originated from food stalls serving a milky soup ramen after World War II, is now categorized into three types: the “brown type” with a sweet and spicy pork bone soy sauce soup that appeared around 1965, the “yellow type” soup made from pork bones, chicken bones, and vegetables, and the “white type” light soup. The noodles are short, straight noodles about 20 cm long that are easy to mix with the soup. The toppings are typically sweet and spicy pork belly, but there are also shops that top it with Chashu (roast pork)1. Another characteristic of Tokushima Ramen is the use of raw eggs instead of boiled eggs, which goes perfectly with the rich soup."
     },
     "shopName": {
-      "japanese": "お店の名前4",
-      "english": "Shop Name 4"
+      "japanese": "徳島ラーメン はるま",
+      "english": "Tokushima Ramen Haruma"
     },
-    "shopLink": "https://shop4.example.com"
+    "shopLink": "https://tabelog.com/tokyo/A1304/A130401/13262856/"
   },
   {
-    "type": "熊本ラーメン",
+    "type": {
+      "japanese": "熊本ラーメン",
+      "english": "Kumamoto Ramen"
+    },
     "description": {
-      "japanese": "熊本ラーメンの説明文",
-      "english": "Description of Kumamoto Ramen"
+      "japanese": "熊本ラーメンは、豚骨スープに、にんにくチップやマー油（ニンニクを揚げた油）を加えるのが特徴です。地元民から芸能人まで、幅広く愛されています。",
+      "english": "Kumamoto Ramen is characterized by the addition of garlic chips and Ma-yu (fried garlic oil) to the pork bone soup1. It is loved by a wide range of people, from locals to celebrities."
     },
     "shopName": {
-      "japanese": "お店の名前5",
-      "english": "Shop Name 5"
+      "japanese": "桂花ラーメン 新宿東口駅前店",
+      "english": "Keika Ramen Shinjuku Higashiguchiekimaeten"
     },
-    "shopLink": "https://shop5.example.com"
+    "shopLink": "https://retty.me/area/PRE13/ARE1/SUB101/100000017845/"
   },
   {
-    "type": "博多ラーメン",
+    "type": {
+      "japanese": "博多ラーメン",
+      "english": "Hakata Ramen"
+    },
     "description": {
-      "japanese": "博多ラーメンの説明文",
-      "english": "Description of Hakata Ramen"
+      "japanese": "博多ラーメンは、福岡県の博多地区が発祥の地とされ、豚骨スープと細いストレート麺が特徴的です。スープは白濁色で、豚骨を長時間煮込んで作られます。具材としては、ネギやチャーシュー、海苔などが一般的です。また、博多ラーメンには大盛りがない代わりに替え玉システムがあるので、量が足りないと感じた場合は追加するのもよいかもしれません。",
+      "english": "Hakata Ramen, originating from the Hakata district in Fukuoka Prefecture, is characterized by its pork bone soup and thin straight noodles. The soup is milky in color and is made by simmering pork bones for a long time. Common toppings include green onions, Chashu (roast pork), and Nori (seaweed). Also, instead of offering large servings, Hakata Ramen has a system where you can order additional noodles if you feel that the quantity is not enough."
     },
     "shopName": {
-      "japanese": "お店の名前6",
-      "english": "Shop Name 6"
+      "japanese": "博多麺房 赤のれん 丸ビル店",
+      "english": "Hakatamenbo Akanoren Marubiruten"
     },
-    "shopLink": "https://shop6.example.com"
+    "shopLink": "https://tabelog.com/tokyo/A1302/A130201/13010547/"
+  },
+  {
+    "type": {
+      "japanese": "和歌山ラーメン",
+      "english": "Wakayama Ramen"
+    },
+    "description": {
+      "japanese": "和歌山ラーメンは、地元では「中華そば」と呼ばれ、大きく分けて豚骨醤油ベースと醤油ベースの2種類があります。ラーメンを待つ間に早寿司（鯖寿司）を食べるのも和歌山ラーメン独特の風習です。和歌山市内には行列ができるお店から、長年愛されている老舗のお店まで多数存在します。",
+      "english": "Wakayama Ramen, locally known as “Chuka Soba”, is broadly divided into two types: pork bone soy sauce base and soy sauce base. It is a unique custom in Wakayama to eat Saba Sushi (mackerel sushi) while waiting for ramen. There are many shops in Wakayama City, from those that have long lines to long-established shops that have been loved for many years."
+    },
+    "shopName": {
+      "japanese": "むらさき山",
+      "english": "Murasakiyama"
+    },
+    "shopLink": "https://tabelog.com/tokyo/A1314/A131402/13046911/"
+  },
+  {
+    "type": {
+      "japanese": "喜多方ラーメン",
+      "english": "Kitakata Ramen"
+    },
+    "description": {
+      "japanese": "喜多方ラーメンは、福島県の喜多方市が発祥の地とされています。このラーメンは、しょう油味をベースにした万人ウケする味で、日本三大ラーメンの1つに君臨しています。特徴的なのは、平打ちの中太麺で、水を多く含んだ加水率の高い麺はコシがあり、食べ応え抜群です。また、喜多方市には朝ラーメンの文化があり、出勤前やお休みの日の朝ごはんにラーメンを食べる人がいるほどです。",
+      "english": "Kitakata Ramen, originating from Kitakata city in Fukushima Prefecture, is one of the three major ramens in Japan, along with Sapporo and Hakata Ramen. It is characterized by its soy sauce-based flavor that is popular with everyone. A distinctive feature of Kitakata Ramen is its flat, medium-thick noodles. The noodles, which contain a lot of water, have a high water content, giving them a firm texture and a satisfying eating experience. Also, there is a culture of morning ramen in Kitakata city, and there are people who eat ramen for breakfast before going to work or on their days off."
+    },
+    "shopName": {
+      "japanese": "らぁめん 満来",
+      "english": "Ramen Manrai"
+    },
+    "shopLink": "https://tabelog.com/tokyo/A1304/A130401/13000808/"
+  },
+  {
+    "type": {
+      "japanese": "牛骨ラーメン",
+      "english": "Beef Bone Ramen"
+    },
+    "description": {
+      "japanese": "牛骨ラーメンは、鳥取県のご当地ラーメンで、牛骨でスープをとったラーメンのことです。スープは少し甘めでコクがあり、まろやかな味わいが特徴です。具材としては、チャーシューやメンマ、ネギなどが一般的です。また、鳥取県内にはこのラーメンが食べられるお店が点在しており、特に中部に位置する倉吉市には、人気店が多くあります。",
+      "english": "Beaf Bone Ramen is a local specialty of Tottori Prefecture, characterized by its soup made from beef bones. The soup has a slight sweetness and richness, and its smooth flavor is a distinctive feature. Common toppings include Chashu (roast pork), Menma (bamboo shoots), and green onions. There are many restaurants serving this ramen throughout Tottori Prefecture, especially in the central city of Kurayoshi, where many popular shops are located."
+    },
+    "shopName": {
+      "japanese": "牛骨らぁ麺マタドール",
+      "english": "Gyukotsu Ramen Matador"
+    },
+    "shopLink": "https://tabelog.com/tokyo/A1324/A132402/13128987/"
+  },
+  {
+    "type": {
+      "japanese": "赤湯ラーメン",
+      "english": "Akayu Ramen"
+    },
+    "description": {
+      "japanese": "赤湯ラーメンは、山形県南陽市（旧赤湯町）で供されているご当地ラーメンです。特に、赤湯特産の唐辛子と山形の赤味噌を組み合わせた「辛味噌」が特徴的で、これを麺にトッピングします。このラーメンは、1958年に「龍上海」という店が創業したことから始まり、現在では県内外に複数の店舗があります。",
+      "english": "Akayu Ramen is a local ramen served in Nanyo City, Yamagata Prefecture (formerly Akayu Town). It is characterized by the combination of “Karashi Miso”, which is a mixture of Akayu’s specialty chili pepper and Yamagata’s red miso, and this is topped on the noodles. This ramen originated from a shop called “Ryushanghai” that was established in 1958, and now there are several branches inside and outside the prefecture."
+    },
+    "shopName": {
+      "japanese": "龍上海 横浜店 ",
+      "english": "Ryu Shanghai Yokohamaten"
+    },
+    "shopLink": "https://tabelog.com/kanagawa/A1401/A140206/14003644/"
+  },
+  {
+    "type": {
+      "japanese": "台湾ラーメン",
+      "english": "Taiwanese Ramen"
+    },
+    "description": {
+      "japanese": "台湾ラーメンは、豚ひき肉・長ネギ・ニラ・もやしなどの具材を唐辛子で味付けをして炒め、鶏ガラや醤油ベースのスープを加えて茹でた麺にかけた料理です。唐辛子とニンニクで炒めにした通称「台湾ミンチ」は、欠かせないエッセンスです。見た目のインパクトはもちろんなのですが、刺激的な辛さにもやみつきになるファンが多いです。そのネーミングから、台湾料理と思われがちですが、実は台湾にはこのような料理はありません。「台湾ラーメン」は名古屋として生まれ、世の中に広まっていきました。",
+      "english": "Taiwan Ramen is a dish where minced pork, long green onions, garlic chives, bean sprouts, and other ingredients are seasoned with chili pepper and stir-fried, then added to a soup based on chicken bones and soy sauce and poured over boiled noodles. The so-called “Taiwan Minchi”, stir-fried with chili pepper and garlic, is an indispensable essence. Not only does it have a visual impact, but it also has many fans who are addicted to its stimulating spiciness. From its naming, it is often thought to be a Taiwanese dish, but in fact, there is no such dish in Taiwan1. “Taiwan Ramen” was born in Nagoya and spread throughout the world."
+    },
+    "shopName": {
+      "japanese": "郭 政良 味仙 東京神田西口店",
+      "english": "Kaku Masayoshi Misen Tokyo Kanda Nishiguchiten"
+    },
+    "shopLink": "https://tabelog.com/tokyo/A1310/A131002/13206171/"
+  },
+  {
+    "type": {
+      "japanese": "尾道ラーメン",
+      "english": "Onomichi Ramen"
+    },
+    "description": {
+      "japanese": "尾道ラーメンは、広島県の尾道市が発祥の地で、豚の背脂を浮かべた醤油ベースの透き通ったスープと、平打ち麺が特徴的です。鶏ガラと小魚がベースの澄んだ醤油味スープに青ネギやメンマなどをトッピングしたものが特徴的です。また、尾道市内には尾道ラーメンを出すお店が多く、その中でも様々なラーメンが提供されています。",
+      "english": "Onomichi Ramen, originating from Onomichi City in Hiroshima Prefecture, is characterized by its clear soy sauce-based soup with floating pork back fat and flat noodles. It is known for its clear soy sauce-flavored soup based on chicken stock and small fish, topped with green onions, Menma (bamboo shoots), and others2. There are many restaurants serving Onomichi Ramen in Onomichi City, each offering a variety of ramen."
+    },
+    "shopName": {
+      "japanese": "尾道ラーメン 壱番館 新宿御苑店",
+      "english": "Onomichi Ramen Ichibankan Shinjukugyoen"
+    },
+    "shopLink": "https://tabelog.com/tokyo/A1304/A130402/13253702/"
+  },
+  {
+    "type": {
+      "japanese": "長崎ちゃんぽん",
+      "english": "Nagasaki Champon"
+    },
+    "description": {
+      "japanese": "長崎ちゃんぽんは、長崎県発祥の地元グルメで、一度食べれば忘れられない味わい深さがあります。特徴的なのは、豚骨と鶏ガラをベースにした濃厚なスープと、もっちりとした食感の太い麺。具材には、豚肉、海老、イカ、キャベツ、もやし、にんじん、ピーマンなど、色とりどりの野菜と海鮮がたっぷりと使われます。一杯のちゃんぽんには、料理人のこだわりと技が詰まっています。その美味しさをぜひ味わってみてください。",
+      "english": "Nagasaki Chanpon, originating from Nagasaki Prefecture, is a local gourmet delight that you must try when visiting Japan. What sets it apart is its rich soup base made from pork bones and chicken carcass, paired with thick, straight noodles that have a delightful chewy texture. The ramen is topped with a variety of colorful vegetables and seafood, including pork, shrimp, squid, cabbage, bean sprouts, carrots, and bell peppers. Each bowl of Chanpon is a testament to the chef’s dedication and skill. Don’t miss out on experiencing this delicious dish!"
+    },
+    "shopName": {
+      "japanese": "長崎ちゃんぽん・皿うどん 球磨",
+      "english": "Nagasaki Champon Saraudon Kuma"
+    },
+    "shopLink": "https://tabelog.com/tokyo/A1319/A131902/13050827"
+  },
+  {
+    "type": {
+      "japanese": "鯛だしラーメン",
+      "english": "Sea Bream Dashi Ramen"
+    },
+    "description": {
+      "japanese": "鯛だしラーメンは、鯛の出汁を使用したラーメンで、その風味豊かなスープが特徴です。鯛は高級魚として知られ、その旨味と風味がスープにしっかりと出ています。具材としては、豚肩ロースや鶏ムネチャーシュー、千切りごぼう、水菜などが一般的です。また、鯛だしラーメンは、全国各地のラーメン店で見ることができ、その中には鯛だしラーメンを専門に提供するお店もあります。",
+      "english": "Sea Bream Dashi Ramen is a type of ramen that uses broth made from sea bream, known for its flavorful soup. Sea bream is known as a high-quality fish, and its umami and flavor are well-extracted into the soup. Common toppings include pork shoulder roast, chicken breast Chashu, shredded burdock, and watercress. Tai-dashi Ramen can be found in ramen shops all over the country, and there are even shops that specialize in Tai-dashi Ramen."
+    },
+    "shopName": {
+      "japanese": "鯛塩そば 灯花 本店",
+      "english": "Tai Shio Soba Tomoka Honten"
+    },
+    "shopLink": "https://tabelog.com/tokyo/A1309/A130903/13181527/"
+  },
+  {
+    "type": {
+      "japanese": "函館ラーメン",
+      "english": "Hakodate Ramen"
+    },
+    "description": {
+      "japanese": "函館ラーメンは、北海道の函館市が発祥の地で、その特徴はストレートな麺と透明な塩味のスープです。スープは豚骨や鶏ガラ等のダシに塩タレを入れた透明な塩味に仕上げています。具材としては、チャーシューやメンマが一般的です。また、函館市内には多くのラーメン店があり、それぞれが独自のスープや麺を提供しています。",
+      "english": "Hakodate Ramen, originating from Hakodate City in Hokkaido, is characterized by its straight noodles and clear, salty soup. The soup is made by adding a salt sauce to a broth made from pork bones, chicken bones, and other ingredients. Common toppings include Chashu (roast pork) and Menma (bamboo shoots)1. There are many ramen shops in Hakodate City, each offering their own unique soup and noodles."
+    },
+    "shopName": {
+      "japanese": "鏡花",
+      "english": "Kyoka"
+    },
+    "shopLink": "https://tabelog.com/tokyo/A1329/A132901/13005986/"
+  },
+  {
+    "type": {
+      "japanese": "旭川ラーメン",
+      "english": "Asahikawa Ramen"
+    },
+    "description": {
+      "japanese": "旭川ラーメンは、北海道の旭川市が発祥の地で、その特徴はストレートな麺と透明な塩味のスープです。スープは豚骨や鶏ガラ等のダシに塩タレを入れた透明な塩味に仕上げています。具材としては、チャーシューやメンマが一般的です。また、旭川市内には多くのラーメン店があり、それぞれが独自のスープや麺を提供しています。",
+      "english": "Asahikawa Ramen, originating from Asahikawa City in Hokkaido, is characterized by its straight noodles and clear, salty soup. The soup is made by adding a salt sauce to a broth made from pork bones, chicken bones, and other ingredients. Common toppings include Chashu (roast pork) and Menma (bamboo shoots)1. There are many ramen shops in Asahikawa City, each offering their own unique soup and noodles."
+    },
+    "shopName": {
+      "japanese": "旭川ラーメン番外地 八重洲北口店 ",
+      "english": "Asahikawa Ramen Banchigai Yaesukitaguchiten"
+    },
+    "shopLink": "https://tabelog.com/tokyo/A1302/A130201/13000512/"
+  },
+  {
+    "type": {
+      "japanese": "竹岡式ラーメン",
+      "english": "Takeoka-style Ramen"
+    },
+    "description": {
+      "japanese": "竹岡式ラーメンは、千葉県竹岡市発祥の地元グルメです。特徴的なのは、豚骨と魚介をベースにした濃厚なスープと、もっちりとした食感の太いストレート麺。具材には、ジューシーなチャーシュー、香ばしいメンマ、さっぱりとしたネギ、風味豊かな海苔などがトッピングされます。一杯のラーメンには、料理人のこだわりと技が詰まっています。その美味しさをぜひ味わってみてください。",
+      "english": "Takeoka-style Ramen, originating from Takeoka City in Chiba Prefecture, is a local gourmet delight that you must try when visiting Japan. What sets it apart is its rich soup base made from pork bones and seafood, paired with thick, straight noodles that have a delightful chewy texture. The ramen is topped with juicy char siu (roast pork), flavorful menma (bamboo shoots), refreshing green onions, and aromatic nori (seaweed). Each bowl of ramen is a testament to the chef’s dedication and skill. Don’t miss out on experiencing this delicious dish!"
+    },
+    "shopName": {
+      "japanese": "竹岡式ラーメン まる竹",
+      "english": "Takeoka-style Ramen Marutake"
+    },
+    "shopLink": "https://tabelog.com/tokyo/A1302/A130204/13269208/"
   }
 ]

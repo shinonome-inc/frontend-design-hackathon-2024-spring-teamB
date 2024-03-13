@@ -1,6 +1,9 @@
 [
   {
-    "type": "富山ブラックラーメン",
+    "type": {
+      "japanese": "富山ブラックラーメン",
+      "english": "Toyama Black Ramen"
+    },
     "description": {
       "japanese": "富山ブラックラーメンの説明文",
       "english": "Description of Toyama Black Ramen"
@@ -12,7 +15,10 @@
     "shopLink": "https://shop1.example.com"
   },
   {
-    "type": "札幌ラーメン",
+    "type": {
+      "japanese": "札幌ラーメン",
+      "english": "Sapporo Ramen"
+    },
     "description": {
       "japanese": "札幌ラーメンの説明文",
       "english": "Description of Sapporo Ramen"

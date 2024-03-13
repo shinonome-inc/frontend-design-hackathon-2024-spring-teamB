@@ -55,13 +55,15 @@ const StyledHowToUseContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 100px;
+  @media (max-width: ${BREAKPOINT.MEDIUM}) {
+    gap: 40px;
+  }
 `;
 
 const StyledUseContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  //align-items: flex-start;
   align-items: center;
   gap: 20px;
   align-self: stretch;
@@ -75,7 +77,7 @@ const StyledTitle = styled.div`
   font-color: ${COLOR.BLACK};
 
   @media (max-width: ${BREAKPOINT.MEDIUM}) {
-    height: 48px;
+    font-size: 48px;
   }
 `;
 
@@ -85,11 +87,24 @@ const StyledTextContainer = styled.div`
   align-items: center;
   gap: 20px;
   align-self: stretch;
+
+  @media (max-width: ${BREAKPOINT.MEDIUM}) {
+    padding: 0px 8px;
+    align-items: flex-start;
+    gap: 4px;
+  }
 `;
 
 const StyledLogContainer = styled.div`
   width: 228px;
-  height: 203px;
+  height: 203p;
+
+  @media (max-width: ${BREAKPOINT.MEDIUM}) {
+    display: flex;
+    width: 82px;
+    height: 74px;
+    justify-content: center;
+  }
 `;
 
 const StyledManual = styled.div`
@@ -101,6 +116,10 @@ const StyledManual = styled.div`
   line-height: normal;
   text-align: left;
   font-color: ${COLOR.BLACK};
+
+  @media (max-width: ${BREAKPOINT.MEDIUM}) {
+    font-size: 24px;
+  }
 `;
 
 const StyledButtonContainer = styled.div`
@@ -109,4 +128,7 @@ const StyledButtonContainer = styled.div`
   align-items: center;
   gap: 16px;
   padding: 0 0 40px 0;
+
+  @media (max-width: ${BREAKPOINT.MEDIUM}) {
+  }
 `;

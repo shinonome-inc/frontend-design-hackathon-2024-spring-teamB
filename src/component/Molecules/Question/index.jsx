@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import FONTFAMILY from "../../../variables/fontfamily";
-import BREAKPOINT from "../../../variables/breakpoint";
 import COLOR from "../../../variables/colors";
+import BREAKPOINT from "../../../variables/breakpoint";
 
 export const Question = ({ onClick, language }) => {
   return (

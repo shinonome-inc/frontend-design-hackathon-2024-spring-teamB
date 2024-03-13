@@ -48,6 +48,7 @@ export const Languages = () => {
 export default Languages;
 
 const StyledView = styled.div`
+  position: absolute;
   width: 200px;
   gap: 2px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);

@@ -50,6 +50,7 @@ const StyledTopContainer = styled.div`
 `;
 
 const StyledLanguageContainer = styled.div`
+  position: relative;
   margin: 0 0 0 auto;
 `;
 

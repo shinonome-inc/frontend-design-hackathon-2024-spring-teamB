@@ -97,6 +97,7 @@ const StyledManual = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-align: left;
   font-color: ${COLOR.BLACK};
 `;
 

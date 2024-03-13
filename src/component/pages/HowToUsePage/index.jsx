@@ -51,10 +51,10 @@ HowToUse.PropTypes = {
 };
 
 const StyledHowToUseContainer = styled.div`
- display: flex;
- flex:direction: column;
- align-items: center;
- gap: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
 `;
 
 const StyledUseContainer = styled.div`

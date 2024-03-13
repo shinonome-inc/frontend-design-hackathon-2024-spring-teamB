@@ -53,6 +53,7 @@ HowToUse.PropTypes = {
 const StyledHowToUseContainer = styled.div`
   display: flex;
   flex-direction: column;
+
   align-items: center;
   gap: 100px;
 `;
@@ -60,6 +61,7 @@ const StyledHowToUseContainer = styled.div`
 const StyledUseContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
   gap: 20px;
   align-self: stretch;
@@ -68,6 +70,7 @@ const StyledUseContainer = styled.div`
 const StyledTitle = styled.div`
   font-family: ${(props) =>
     props.language === "japanese" ? FONTFAMILY.NOTO_SERIF : FONTFAMILY.TIMES};
+  font-weight: 600;
   font-size: 64px;
   font-color: ${COLOR.BLACK};
 

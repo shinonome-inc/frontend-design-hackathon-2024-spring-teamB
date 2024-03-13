@@ -66,11 +66,8 @@ const StyledUseContainer = styled.div`
 `;
 
 const StyledTitle = styled.div`
-  font-family: ${FONTFAMILY.NOTO_SANS};
-  font-size: 96px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-family: ${FONTFAMILY.NOTO_SERIF};
+  font-size: 64px;
   font-color: ${COLOR.BLACK};
 
   @media (max-width: ${BREAKPOINT.MEDIUM}) {
@@ -93,8 +90,9 @@ const StyledLogContainer = styled.div`
 `;
 
 const StyledManual = styled.div`
-  font-family: ${FONTFAMILY.NOTO_SANS}
-  font-size: 36px;
+  font-family: ${(props) =>
+    props.language === "japanese" ? FONTFAMILY.NOTO_SANS : FONTFAMILY.TIMES};
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

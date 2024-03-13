@@ -31,7 +31,7 @@ export const TopPage = () => {
           <Button variant="yellow" language="ja" onClick={onClick}>
             診断スタート
           </Button>
-          <Button variant="white" language="ja" onClick={onclick}>> 
+          <Button variant="white" language="ja" onClick={onclick}>
             使い方
           </Button>
         </StyledButtonContainer>
@@ -40,7 +40,7 @@ export const TopPage = () => {
   );
   return (
     <>
-      <Templates children={Children} }></Templates>
+      <Templates children={Children}></Templates>
     </>
   );
 };

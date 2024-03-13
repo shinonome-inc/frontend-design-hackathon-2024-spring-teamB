@@ -9,7 +9,6 @@ import FONTFAMILY from "../../variables/fontfamily";
 import BREAKPOINT from "../../variables/breakpoint";
 
 export const TopPage = () => {
-  const IndexPage = () => {
   const router = useRouter();
   const onClick = () => {
     router.push(paths.question1);

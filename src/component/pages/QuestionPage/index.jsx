@@ -5,7 +5,15 @@ import FONTFAMILY from "../../../variables/fontfamily";
 import { Question } from "../../Molecules/Question";
 import Button from "../../Atoms/Button";
 
+import { paths } from "../paths";
+import { useRouter } from "next/router";
+
 const QuestionPage = ({ language }) => {
+  const router = useRouter();
+  const TopPage = () => {
+    router.push(paths.toppage);
+  };
+
   const [isMd, setIsMd] = useState(false);
   const leftImage = isMd ? "/assets/leftmd.png" : "/assets/lgleft.png";
   useEffect(() => {
@@ -39,7 +47,7 @@ const QuestionPage = ({ language }) => {
         <Button children="選択肢2" variant="yellow" />
       </YellowButtonWrapper>
       <ButtonWrapper>
-        <Button children={backButton} variant="default" />
+        <Button children={backButton} variant="default" onClick={TopPage} />
       </ButtonWrapper>
     </Templates>
   );

@@ -6,7 +6,18 @@ import ShareBox from "../../Molecules/ShareBox";
 import Button from "../../Atoms/Button";
 import ramenData from "../../../../src/ramenData.json";
 
+import { paths } from "../paths";
+import { useRouter } from "next/router";
+
 const DiagnosisResultPage = ({ result, language }) => {
+  const router = useRouter();
+  const TopPage = () => {
+    router.push(paths.toppage);
+  };
+  const nextPage = () => {
+    router.push(paths.question);
+  };
+
   const titleText = language === "japanese" ? "診断結果" : "Result";
   const [isMd, setIsMd] = useState(false);
   const leftImage = isMd ? "/assets/leftmd.png" : "/assets/lgleft.png";
@@ -62,10 +73,10 @@ const DiagnosisResultPage = ({ result, language }) => {
       </ShopInfo>
       <ShareBox />
       <ButtonWrapper>
-        <Button onClick="{}" variant="yellow" language={language}>
+        <Button variant="yellow" language={language} onClick={nextPage}>
           もう一度診断する
         </Button>
-        <Button variant="white" language={language}>
+        <Button variant="white" language={language} onClick={TopPage}>
           トップページ
         </Button>
       </ButtonWrapper>

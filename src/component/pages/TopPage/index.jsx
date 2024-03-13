@@ -8,7 +8,19 @@ import Templates from "../../Templates";
 import FONTFAMILY from "../../../variables/fontfamily";
 import BREAKPOINT from "../../../variables/breakpoint";
 
+import { paths } from "../paths";
+import { useRouter } from "next/router";
+
 export const TopPage = () => {
+  const router = useRouter();
+  const nextPage = () => {
+    router.push(paths.question);
+  };
+
+  const HowToUsePage = () => {
+    router.push(paths.howtouse);
+  };
+
   const Children = (
     <StyledTopContainer>
       <StyledLanguageContainer>
@@ -22,10 +34,10 @@ export const TopPage = () => {
         </StyledTitleLogo>
         <StyledMainCopy>好みのラーメンをお選びします</StyledMainCopy>
         <StyledButtonContainer>
-          <Button variant="yellow" language="ja">
+          <Button variant="yellow" language="ja" onClick={nextPage}>
             診断スタート
           </Button>
-          <Button variant="white" language="ja">
+          <Button variant="white" language="ja" onClick={HowToUsePage}>
             使い方
           </Button>
         </StyledButtonContainer>

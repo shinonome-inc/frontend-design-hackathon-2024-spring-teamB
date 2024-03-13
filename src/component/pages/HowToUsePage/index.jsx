@@ -7,7 +7,18 @@ import BREAKPOINT from "../../../variables/breakpoint";
 import PropTypes from "prop-types";
 import COLOR from "../../../variables/colors";
 
+import { paths } from "../paths";
+import { useRouter } from "next/router";
+
 export const HowToUse = ({ onClick, language }) => {
+  const router = useRouter();
+  const nextPage = () => {
+    router.push(paths.question);
+  };
+  const TopPage = () => {
+    router.push(paths.toppage);
+  };
+
   const Children = (
     <StyledHowToUseContainer>
       <StyledUseContainer>
@@ -26,10 +37,10 @@ export const HowToUse = ({ onClick, language }) => {
         </StyledTextContainer>
       </StyledUseContainer>
       <StyledButtonContainer>
-        <Button variant="yellow" language="ja">
+        <Button variant="yellow" language="ja" onClick={nextPage}>
           診断スタート
         </Button>
-        <Button variant="white" language="ja">
+        <Button variant="white" language="ja" onClick={TopPage}>
           トップページ
         </Button>
       </StyledButtonContainer>

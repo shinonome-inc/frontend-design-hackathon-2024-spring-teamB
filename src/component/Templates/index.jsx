@@ -77,7 +77,6 @@ const Border = styled.img`
 `;
 
 const Content = styled.div`
-  flex-grow: 1;
   text-align: center;
   font-family: ${(props) =>
     props.language === "japanese" ? FONTFAMILY.NOTO_SERIF : FONTFAMILY.TIMES};

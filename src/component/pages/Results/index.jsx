@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Templates from "../../Templates";
 import FONTFAMILY from "../../../variables/fontfamily";
 import ShareBox from "../../Molecules/ShareBox";
+import Button from "../../Atoms/Button";
+import ramenData from "../../../../src/ramenData.json";
 
 const DiagnosisResultPage = ({ result, language }) => {
   const titleText = language === "japanese" ? "診断結果" : "Result";
@@ -20,38 +22,21 @@ const DiagnosisResultPage = ({ result, language }) => {
     handleResize();
     window.addEventListener("resize", handleResize);
 
-    // 説明文、お店の名前、お店のサイトリンクを設定
-    switch (result) {
-      case "富山ブラックラーメン":
-        setDescription(
-          language === "japanese"
-            ? "富山ブラックラーメンの説明文"
-            : "Description of Toyama Black Ramen"
-        );
-        setShopName(language === "japanese" ? "お店の名前1" : "Shop Name 1");
-        setShopLink("https://shop1.example.com");
-        break;
-      case "札幌ラーメン":
-        setDescription(
-          language === "japanese"
-            ? "札幌ラーメンの説明文"
-            : "Description of Sapporo Ramen"
-        );
-        setShopName(language === "japanese" ? "お店の名前2" : "Shop Name 2");
-        setShopLink("https://shop2.example.com");
-        break;
-      // 他のラーメンの種類に対する説明文、お店の名前、お店のサイトリンクもここに追加する
-      default:
-        setDescription("");
-        setShopName("");
-        setShopLink("");
-        break;
+    const selectedRamen = ramenData.find((ramen) => ramen.type === result);
+    if (selectedRamen) {
+      setDescription(selectedRamen.description[language]);
+      setShopName(selectedRamen.shopName[language]);
+      setShopLink(selectedRamen.shopLink);
+    } else {
+      setDescription("");
+      setShopName("");
+      setShopLink("");
     }
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [result, language]); // resultとlanguageが変更された時のみeffectを実行
+  }, [result, language]);
 
   const shopTitleText =
     language === "japanese" ? "おすすめのお店" : "Recommended shop";
@@ -75,7 +60,15 @@ const DiagnosisResultPage = ({ result, language }) => {
           {shopLinkText}
         </ShopLink>
       </ShopInfo>
-      <ShareBox/>
+      <ShareBox />
+      <ButtonWrapper>
+        <Button onClick="{}" variant="yellow" language={language}>
+          もう一度診断する
+        </Button>
+        <Button variant="white" language={language}>
+          トップページ
+        </Button>
+      </ButtonWrapper>
     </Templates>
   );
 };
@@ -129,6 +122,16 @@ const ShopName = styled.p`
 
 const ShopLink = styled.a`
   font-size: 24px;
+`;
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 12px;
+  padding: 0 0 40px 0;
 `;
 
 export default DiagnosisResultPage;

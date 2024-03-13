@@ -2,7 +2,7 @@ import React, { Children } from "react";
 import styled from "styled-components";
 import Templates from "../../Templates";
 import Button from "../../Atoms/Button";
-import FONTFAMILY from "../../variables/fontfamily";
+import FONTFAMILY from "../../../variables/fontfamily";
 import BREAKPOINT from "../variables/breakpoint";
 import PropTypes from "react";
 import COLOR from "@/variables/colors";

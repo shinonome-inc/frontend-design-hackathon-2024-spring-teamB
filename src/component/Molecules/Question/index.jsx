@@ -10,6 +10,15 @@ export const Question = ({ onClick, language }) => {
     <StyledQuestion onClick={onClick}>
       <StyledPolygon></StyledPolygon>
       <StyledText language={language}>ここに質問が入ります</StyledText>
+import FONTFAMILY from "../../../variables/fontfamily";
+import BREAKPOINT from "../../../variables/breakpoint";
+import COLOR from "../../../variables/colors";
+
+export const Question = ({ onClick, questionText }) => {
+  return (
+    <StyledQuestion onClick={onClick}>
+      <StyledPolygon />
+      <StyledText>{questionText}</StyledText>
     </StyledQuestion>
   );
 };
@@ -50,6 +59,7 @@ const StyledText = styled.div`
   font-color: ${COLOR.BLACK};
   font-family: ${(props) =>
     props.language === "japanese" ? FONTFAMILY.NOTO_SANS : FONTFAMILY.TIMES};
+  font-family: ${FONTFAMILY.NOTO_SANS};
   background-color: ${COLOR.WHITE};
 
   @media (max-width: ${BREAKPOINT.MEDIUM}) {

@@ -3,9 +3,9 @@ import styled from "styled-components";
 import Templates from "../../Templates";
 import Button from "../../Atoms/Button";
 import FONTFAMILY from "../../../variables/fontfamily";
-import BREAKPOINT from "../variables/breakpoint";
-import PropTypes from "react";
-import COLOR from "@/variables/colors";
+import BREAKPOINT from "../../../variables/breakpoint";
+import PropTypes from "prop-types";
+import COLOR from "../../../variables/colors";
 
 export const HowToUse = ({ onClick, language }) => {
   const Children = (
@@ -72,6 +72,10 @@ const StyledTitle = styled.div`
   font-weight: 600;
   line-height: normal;
   font-color: ${COLOR.BLACK};
+
+  @media (max-width: ${BREAKPOINT.MEDIUM}) {
+    height: 48px;
+  }
 `;
 
 const StyledTextContainer = styled.div`

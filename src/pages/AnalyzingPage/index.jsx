@@ -1,6 +1,6 @@
-import Analyzingview from "../../../component/Molecules/Analyzingview";
+import Analyzingview from "../../component/Molecules/Analyzingview";
 import styled, { keyframes } from "styled-components";
-import Templates from "../../Templates";
+import Templates from "../../component/Templates";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 

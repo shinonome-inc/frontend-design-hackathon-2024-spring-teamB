@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import Templates from "../../Templates";
+import Templates from "../../component/Templates";
 import React, { useEffect, useState } from "react";
-import FONTFAMILY from "../../../variables/fontfamily";
-import { Question } from "../../Molecules/Question";
-import Button from "../../Atoms/Button";
+import FONTFAMILY from "../../variables/fontfamily";
+import { Question } from "../../component/Molecules/Question";
+import Button from "../../component/Atoms/Button";
 
 const QuestionPage = ({ language }) => {
   const [isMd, setIsMd] = useState(false);
@@ -31,7 +31,7 @@ const QuestionPage = ({ language }) => {
       <Content>
         <LeftImage src={leftImage} alt="Left Image" />
         <QuestionWrapper>
-          <Question questionText="aaaaaaaaaaaaaaaaaaaaaaaaa" />
+          <Question questionText="" />
         </QuestionWrapper>
       </Content>
       <YellowButtonWrapper>

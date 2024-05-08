@@ -1,11 +1,23 @@
 import styled from "styled-components";
-import Templates from "../../Templates";
+import Templates from "../../component/Templates";
 import React, { useEffect, useState } from "react";
-import FONTFAMILY from "../../../variables/fontfamily";
-import { Question } from "../../Molecules/Question";
-import Button from "../../Atoms/Button";
+import FONTFAMILY from "../../variables/fontfamily";
+import { Question } from "../../component/Molecules/Question";
+import Button from "../../component/Atoms/Button";
+import { useRouter } from "next/router";
+import { paths } from "../../paths";
 
 const QuestionPage = ({ language }) => {
+  const router = useRouter();
+  const onTopClick = () => {
+    router.push(paths.index);
+  };
+  const on1Click = () => {
+    router.push(paths.question1);
+  };
+  const on2Click = () => {
+    router.push(paths.question2);
+  };
   const [isMd, setIsMd] = useState(false);
   const leftImage = isMd ? "/assets/leftmd.png" : "/assets/lgleft.png";
   useEffect(() => {
@@ -20,26 +32,25 @@ const QuestionPage = ({ language }) => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
+  
   const questionText = language === "english" ? "Question 1" : "質問1";
   const backButton =
     language === "english" ? "Back to Top" : "トップページへ戻る";
-
   return (
     <Templates>
       <TextWrapper>{questionText}</TextWrapper>
       <Content>
         <LeftImage src={leftImage} alt="Left Image" />
         <QuestionWrapper>
-          <Question questionText="aaaaaaaaaaaaaaaaaaaaaaaaa" />
+          <Question questionText="好きなラーメンのスープの味わいの系統は？" />
         </QuestionWrapper>
       </Content>
       <YellowButtonWrapper>
-        <Button children="選択肢1" variant="yellow" />
-        <Button children="選択肢2" variant="yellow" />
+        <Button children="濃厚" variant="yellow" onClick={on1Click}/>
+        <Button children="あっさり" variant="yellow" onClick={on2Click}/>
       </YellowButtonWrapper>
       <ButtonWrapper>
-        <Button children={backButton} variant="default" />
+        <Button children={backButton} variant="default" onClick={onTopClick} />
       </ButtonWrapper>
     </Templates>
   );

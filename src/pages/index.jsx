@@ -10,10 +10,10 @@ import BREAKPOINT from "../variables/breakpoint";
 
 export const TopPage = () => {
   const router = useRouter();
-  const onUseClick = () => {
-    router.push(paths.HowToUsePage);
-  };
   const onClick = () => {
+    router.push(paths.question);
+  };
+  const onUseClick = () => {
     router.push(paths.HowToUsePage);
   };
   const Children = (

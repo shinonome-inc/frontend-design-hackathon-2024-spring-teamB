@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import Templates from "../../Templates";
-import FONTFAMILY from "../../../variables/fontfamily";
-import ShareBox from "../../Molecules/ShareBox";
-import Button from "../../Atoms/Button";
+import Templates from "../../component/Templates";
+import FONTFAMILY from "../../variables/fontfamily";
+import ShareBox from "../../component/Molecules/ShareBox";
+import Button from "../../component/Atoms/Button";
 import ramenData from "../../../../src/ramenData.json";
 
 const DiagnosisResultPage = ({ result, language }) => {

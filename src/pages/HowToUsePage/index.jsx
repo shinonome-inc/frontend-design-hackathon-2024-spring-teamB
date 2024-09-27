@@ -1,13 +1,18 @@
-import React, { Children } from "react";
+import { paths } from "../../paths";
+import { useRouter } from "next/router";
 import styled from "styled-components";
-import Templates from "../../Templates";
-import Button from "../../Atoms/Button";
-import FONTFAMILY from "../../../variables/fontfamily";
-import BREAKPOINT from "../../../variables/breakpoint";
+import Templates from "../../component/Templates";
+import Button from "../../component/Atoms/Button";
+import FONTFAMILY from "../../variables/fontfamily";
+import BREAKPOINT from "../../variables/breakpoint";
 import PropTypes from "prop-types";
-import COLOR from "../../../variables/colors";
+import COLOR from "../../variables/colors";
 
-export const HowToUse = ({ onClick, language }) => {
+export const HowToUse = ({ language }) => {
+  const router = useRouter();
+  const onTopClick = () => {
+    router.push(paths.index);
+  };
   const Children = (
     <StyledHowToUseContainer>
       <StyledUseContainer>
@@ -29,7 +34,7 @@ export const HowToUse = ({ onClick, language }) => {
         <Button variant="yellow" language="ja">
           診断スタート
         </Button>
-        <Button variant="white" language="ja">
+        <Button variant="white" language="ja" onClick={onTopClick}>
           トップページ
         </Button>
       </StyledButtonContainer>
